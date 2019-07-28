@@ -1,25 +1,27 @@
 import React from 'react';
-import logo from './logo.svg';
+
+import Header from './Components/Header'
+import Day from './Components/Day'
+import Selection from './Components/Selection'
+import { Provider } from 'react-redux';
+import store from "./firebase_redux/store"
+
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Provider store = {store}>
+        <div className="App">
+          <Header />
+          <Selection />
+
+          <Day day={'Monday'} />
+          <Day day={'Tuesday'} />
+          <Day day={'Wednesday'} />
+          <Day day={'Thursday'} />
+          <Day day={'Friday'} />
+        </div>
+    </Provider>
   );
 }
 
