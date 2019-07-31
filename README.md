@@ -13,6 +13,8 @@
 
      `npm install --save gh-pages`
 
+     `npm install --save react-router-dom `
+
      https://thoughtbot.com/blog/positioning
 
      https://blog.isquaredsoftware.com/2018/01/practical-redux-part-11-nested-data-trees/s

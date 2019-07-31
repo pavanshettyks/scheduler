@@ -1,0 +1,32 @@
+table {
+  /*  font-family: arial, sans-serif; */
+    border-collapse: collapse;
+    margin: 15px;
+    padding:2px;
+    width: 80%;
+  }
+  
+  td {
+    border: 1px solid #0a0101;
+    text-align: left;
+    padding: 8px;
+    
+    
+  }
+  
+  th {
+    border: 2px solid #0a0101;
+    text-align: left;
+    padding: 8px;
+    
+    
+  }
+  
+  tbody:nth-child(odd) {
+    background-color: #d6b910;
+  }
+  tbody:nth-child(even) {
+    background-color: #f0de7b;
+  }
+
+  

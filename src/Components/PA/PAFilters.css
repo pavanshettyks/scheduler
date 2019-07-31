@@ -1,0 +1,22 @@
+input {
+    border: 2px solid #3a3838;
+    margin-right:20px;
+    padding:3px;
+
+}
+.formFilter{
+    font-size: calc(9px + 2vmin);
+    padding: 7px;
+    width: 100%;
+    place-items: center stretch;
+
+}
+.formFilter_1{
+    display: flex;    
+    place-items: left;
+    margin-top:15px;
+}
+.formFilter_2{
+    place-items: left;
+    margin-left:15px;
+}
