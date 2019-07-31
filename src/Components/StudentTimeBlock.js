@@ -86,7 +86,7 @@ const mapStateToProps = (state,props) => {
     const day = props.day;
     const time = props.time;
     //console.log(state.selectionView.selectedView);
-   console.log(state.local[user][day]['hrs'][time]['0'])
+  // console.log(state.local[user][day]['hrs'][time]['0'])
    return  {
     user: user,//this.ownProps.user,
     day: props.day,//this.ownProps.day,

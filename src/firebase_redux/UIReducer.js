@@ -1,6 +1,7 @@
 
 const UIControls = {
     ShowAddUser: false,
+    add_user_name:'',
     Filter_Event_Name:'',
     Filter_UID:'',
     Filter_Location:'',

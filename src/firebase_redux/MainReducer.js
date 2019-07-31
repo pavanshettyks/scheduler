@@ -1,4 +1,5 @@
 import initialState from './initialState'
+import init_user from './initialUserDetails'
 //import { Monday } from '../Components/Monday';
 //import uuid from 'uuid';
 
@@ -40,6 +41,10 @@ const MainReducer = (state = initialState, action) => {
         }
        
         return {  ...state,[user]:user1}
+    
+    case 'Add_User':
+
+        return {...state,[action.user]:init_user, userList:[...state.userList,action.user]}
     default:
         return state
     }

@@ -9,7 +9,7 @@ export class PATable extends Component {
  
 
     render() {
-        let newROwData;
+
         return (
             <React.Fragment>
                     <table>
@@ -32,8 +32,9 @@ export class PATable extends Component {
                         
                             this.props.AllRowData.map((row) => {
                                 console.log(new Date())
-                                if(row.UID.includes(this.props.Filter_UID) && row.Event_Name.includes(this.props.Filter_Event_Name) &&
-                                 row.Staff.includes(this.props.Filter_Staff) && row.Location.includes(this.props.Filter_Location))
+                                if(row.UID.includes(this.props.Filter_UID) && row.Event_Name.toUpperCase().includes(this.props.Filter_Event_Name.toUpperCase()) &&
+                                 row.Staff.toUpperCase().includes(this.props.Filter_Staff.toUpperCase()) && 
+                                 row.Location.toUpperCase().includes(this.props.Filter_Location.toUpperCase()))
                                     return <TableRow rowData ={row} key ={row.UID} />
                             })
                         }

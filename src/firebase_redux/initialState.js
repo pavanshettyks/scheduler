@@ -1,4 +1,4 @@
-import user from './initialUserDetails'
+import init_user from './initialUserDetails'
 const userList = [
   "Pavan",
   "PK",
@@ -6,8 +6,8 @@ const userList = [
 ]
 
 const initialState = {
-   Pavan : user,
-    PK: user, 
+   Pavan : init_user,
+    PK: init_user, 
     userList
   }
 

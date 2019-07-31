@@ -31,7 +31,7 @@ export  const day = {
 19:intervals,
 }
 
-const user = {
+const init_user = {
   Monday: {hrs: day, CountPerDay: 0},
   Tuesday:{hrs: day, CountPerDay: 0},
   Wednesday:{hrs: day, CountPerDay: 0},
@@ -40,4 +40,4 @@ const user = {
 }
 
 
-export default user;
+export default init_user;
