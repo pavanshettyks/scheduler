@@ -4,6 +4,7 @@ import Header from './Components/Header/Header'
 import Scheduler from './Components/Scheduler'
 import AddUser from './Components/Users/AddUser'
 import PAScreen from './Components/PA/PAScreen'
+import AddNewPASchedule from './Components/PA/AddNewPASchedule'
 
 import { Provider } from 'react-redux';
 import store from "./firebase_redux/store"
@@ -23,8 +24,9 @@ function App() {
                        </Route>
                        
                       <Route exact path='/scheduler' component={ Scheduler } />
-                      <Route path='/AddUser' component={AddUser} />
-                      <Route path='/PAScreen' component={PAScreen} />
+                      <Route path='/scheduler/AddUser' component={AddUser} />
+                      <Route path='/scheduler/PAScreen' component={PAScreen} />
+                      <Route path='/scheduler/AddNewEvent' component={AddNewPASchedule} />
                       
 	                </Switch>
 

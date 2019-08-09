@@ -12,7 +12,7 @@ export class TableRow extends Component {
                 <tr>
                             <td>{this.props.row.Event_Name}</td>
                             <td>{this.props.row.UID}</td>
-                            <td>{this.props.row.Event_Date}</td>
+                            <td>{this.props.Event_Date}</td>
                             <td>{this.props.row.Location}</td>
                             <td>{this.props.row.Time}</td>
                             <td>{this.props.row.Num_Attendants}</td>
@@ -26,8 +26,12 @@ export class TableRow extends Component {
 }
 
 const mapStateToProps = (state,ownProps) => {
+    let date = new Date(ownProps.rowData.Event_Date);
+    let event_date = date.getMonth()+'/'+date.getDate()+'/'+date.getFullYear();
     return {
         row: ownProps.rowData,
+        Event_Date: event_date
+        
     }
    // rowData: state.PA
    

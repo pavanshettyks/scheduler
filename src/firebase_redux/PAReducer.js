@@ -3,7 +3,7 @@ const PAData = [
         {
             Event_Name:"RAISE Transfer Program Orientation",
             UID:"4183",
-            Event_Date:"7/30/2019",
+            Event_Date:"2019-08-15",
             Location:"TSU",
             Time:"8 AM - 10 AM",
             Num_Attendants:"4",
@@ -14,7 +14,7 @@ const PAData = [
         {
             Event_Name:"Chiefs meeting",
             UID:"4187",
-            Event_Date:"8/2/2019",
+            Event_Date:"2019-08-19",
             Location:"north entrance of SCPS",
             Time:"9-10am",
             Num_Attendants:"2",
@@ -25,7 +25,7 @@ const PAData = [
         {
             Event_Name:"Project Raise - SIP Bootcamp",
             UID:"4188",
-            Event_Date:"8/7/2019",
+            Event_Date:"2019-08-10",
             Location:"SCPS (2) at each entrance",
             Time:"8:30 AM - 9:30 AM",
             Num_Attendants:"4",
@@ -39,10 +39,13 @@ const PAReducer = (state = PAData, action) => {
 
     switch (action.type) {
         
-        case 'selectionView':
+       // case 'selectionView':
          //console.log(action.location)
-        return {...state,selectedView:action.location }
-
+       // return {...state,selectedView:action.location }
+        case 'NewPASchedule':
+            //console.log([...PAData,action.new_row],"ssss", state)
+           return [...PAData,action.new_row] 
+          //return state
         default:
                 
         return state

@@ -31,7 +31,7 @@ export class PATable extends Component {
 
                         
                             this.props.AllRowData.map((row) => {
-                                console.log(new Date())
+                              
                                 if(row.UID.includes(this.props.Filter_UID) && row.Event_Name.toUpperCase().includes(this.props.Filter_Event_Name.toUpperCase()) &&
                                  row.Staff.toUpperCase().includes(this.props.Filter_Staff.toUpperCase()) && 
                                  row.Location.toUpperCase().includes(this.props.Filter_Location.toUpperCase()))
@@ -47,6 +47,7 @@ export class PATable extends Component {
 }
 
 const mapStateToProps = (state) => {
+   // console.log(new Date())
     return{
     AllRowData: state.PA,
     Filter_Event_Name:state.UI.Filter_Event_Name,

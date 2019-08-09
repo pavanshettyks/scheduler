@@ -6,7 +6,7 @@ import './PAFilters.css'
 export class PAFilters extends Component {
  
     changeText = (e) =>{
-        console.log(e.target.value)
+       // console.log(e.target.value)
         this.props.onChangeFilter(e.target.name,e.target.value)
     }
 
