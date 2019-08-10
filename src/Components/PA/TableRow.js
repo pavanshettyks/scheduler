@@ -27,7 +27,7 @@ export class TableRow extends Component {
 
 const mapStateToProps = (state,ownProps) => {
     let date = new Date(ownProps.rowData.Event_Date);
-    let event_date = date.getMonth()+'/'+date.getDate()+'/'+date.getFullYear();
+    let event_date = (date.getMonth()+ 1 )+'/'+date.getDate()+'/'+date.getFullYear();
     return {
         row: ownProps.rowData,
         Event_Date: event_date

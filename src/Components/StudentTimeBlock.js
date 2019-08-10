@@ -5,7 +5,7 @@ import { connect } from 'react-redux'
 
 
 import React, { Component } from 'react'
-import PropTypes from 'prop-types'
+//import PropTypes from 'prop-types'
 
 export class StudentTimeBlock extends Component {
 

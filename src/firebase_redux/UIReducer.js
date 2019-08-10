@@ -6,6 +6,7 @@ const UIControls = {
     Filter_UID:'',
     Filter_Location:'',
     Filter_Staff:'',
+    Filter_Date: '',
 }
 const UIReducer = (state = UIControls, action) => {
 
@@ -16,7 +17,7 @@ const UIReducer = (state = UIControls, action) => {
         return {...state,ShowAddUser:!state.ShowAddUser }
 
         case 'FilterValue':
-           // console.log(action)
+            // / console.log(action.target,"",action.value)
                 return {...state,[action.target]:action.value}
 
         default:

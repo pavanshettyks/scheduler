@@ -3,6 +3,7 @@ import React, { Component } from 'react'
 import PAFilters from './PAFiIters'
 import PATable from './PATable'
 
+
 export class PAScreen extends Component {
 
     newlocation =() =>{
@@ -13,7 +14,9 @@ export class PAScreen extends Component {
     render() {
         return (
             <div>
-                <button onClick = {this.newlocation} >Add New PA Schedule</button>
+               <div style={{marginTop:'15px',display:'flex',alignItems: 'left'  }}>
+                     <button onClick = {this.newlocation} >Add New PA Schedule</button>
+               </div>
                 <PAFilters />
                
                 <PATable />

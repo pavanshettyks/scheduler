@@ -5,7 +5,7 @@ input {
 
 }
 .formFilter{
-    font-size: calc(9px + 2vmin);
+    font-size: calc(4px + 2vmin);
     padding: 7px;
     width: 100%;
     place-items: center stretch;

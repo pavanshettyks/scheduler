@@ -1,12 +1,13 @@
 import React, { Component } from 'react'
-import PropTypes from 'prop-types'
+//import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 import './PAFilters.css'
 
 export class PAFilters extends Component {
  
     changeText = (e) =>{
-       // console.log(e.target.value)
+      //  console.log(new Date())
+        //console.log(e.target.value)
         this.props.onChangeFilter(e.target.name,e.target.value)
     }
 
@@ -31,7 +32,13 @@ export class PAFilters extends Component {
                             Location:   <input type="text" name="Filter_Location"  value ={this.props.Filter_Location} 
                             onChange ={ this.changeText }/>
                         </div>
+                        <div className= "formFilter_2">
+                            Start Date:   <input type="date" name="Filter_Date"  value ={this.props.Filter_Date} 
+                            onChange ={ this.changeText }/>
+                        </div>
+                        
                     </div>
+                   
                 </form>
             </React.Fragment>
         )
@@ -39,11 +46,15 @@ export class PAFilters extends Component {
 }
 
 const mapStateToProps = (state) =>  {
+   let date = new Date();
+   let today = date.getFullYear()+'-0'+(date.getMonth()+1)+'-0'+date.getDate();
+   //console.log(new Date().getDate())
     return{
     Filter_Event_Name:state.UI.Filter_Event_Name,
     Filter_UID:state.UI.Filter_UID,
     Filter_Location:state.UI.Filter_Location,
     Filter_Staff:state.UI.Filter_Staff,
+    Filter_Date: state.UI.Filter_Date?state.UI.Filter_Date: today,
    }
 }
 

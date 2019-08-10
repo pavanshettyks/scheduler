@@ -1,9 +1,20 @@
 
 const PAData = [ 
+         {
+        Event_Name:"CTransfer Program Orientation",
+        UID:"418",
+        Event_Date:"2019-08-17",
+        Location:"TSU",
+        Time:"8 AM - 10 AM",
+        Num_Attendants:"4",
+        Staff:"Jatin, Trevi, Brenda, Jordan",
+        Permit_Type:"Billable",
+        PRO_Permits_located:"Pink Folder",
+         },
         {
             Event_Name:"RAISE Transfer Program Orientation",
             UID:"4183",
-            Event_Date:"2019-08-15",
+            Event_Date:"2019-08-05",
             Location:"TSU",
             Time:"8 AM - 10 AM",
             Num_Attendants:"4",
